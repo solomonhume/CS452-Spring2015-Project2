@@ -1,3 +1,6 @@
-name, date, description
+Jiaju Huang
+0530537
+jiajhua@clarkson.edu
 
-be sure to include complete details of how to interact with your application
+I changed my mind, and made my project a game - WebGL pong.
+Use A key to move left, and D key to move right, and defeat the computer opponent.
