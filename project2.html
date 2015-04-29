@@ -1,28 +1,46 @@
-<!DOCTYPE html>
+<!Jiaju Huang, jiajhua@clarkson.edu, 0530537>
+<!doctype html>
 <html>
-<head>
-<script id="vertex-shader" type="x-shader/x-vertex">
-attribute vec4 vPosition;
-void main()
-{
-gl_Position = vPosition;
-}
-</script>
-<script id="fragment-shader" type="x-shader/x-fragment">
-precision mediump float;
-void main()
-{
-gl_FragColor = vec4( 1.0, 1.0, 1.0, 1.0 );
-}
-</script>
-<script type="text/javascript" src="../Common/webgl-utils.js"></script>
-<script type="text/javascript" src="../Common/initShaders.js"></script>
-<script type="text/javascript" src="../Common/MV.js"></script>
-<script type="text/javascript" src="project1.js"></script>
-</head>
-<body>
-<canvas id="gl-canvas" width="512" height="512">
-Oops ... your browser doesn't support the HTML5 canvas element
-</canvas>
-</body>
+	<head>
+		<title>WebGL pong Jiaju Huang</title>
+		<style>
+			body {
+				background-color: black;
+			}
+			#gameCanvas {
+				background-color: black;
+				width: 1024px;
+				height: 600px;
+				margin: auto;
+				align: center;
+			}
+			#scoreboard {
+				text-align: center;
+				font-family:  Helvetica,  sans-serif;
+				color: white;
+			}
+			#scores {
+				font-size:600%; 
+				padding:0; 
+				margin:0;
+				color: white;
+			}
+			#title {
+				background-color: white;
+				color: black;
+			}
+		</style>
+	</head>
+	<body onload='setup();'>
+		<div id='gameCanvas'></div>
+		<script src='./three.min.js'></script>
+		<script src='./keyboard.js'></script>
+		<script src='./project2.js'></script>
+		<div id='scoreboard'>
+			<h1 id='scores'>0-0</h1>
+			<h1 id='title'>WebGL PONG</h1>
+			<h2 id='winnerBoard'>First to 5 wins!</h2>
+			<h3>A to move left; D to move right</h3>
+		</div>
+	</body>
 </html>
